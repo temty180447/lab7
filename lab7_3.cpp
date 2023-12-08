@@ -2,7 +2,16 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+if(x <= 'Z'&&x > 'A'){
+return x-1;
+}
+if(x == 'A'){
+return 'Z';
+}
+if(x == '0'){
+return '0';
+}
+return '0';
 }
 
 int main(){
@@ -17,3 +26,4 @@ int main(){
 	cout << before('c') << "\n";
 	return 0;
 }
+
